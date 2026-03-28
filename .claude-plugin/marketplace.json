@@ -1,0 +1,25 @@
+{
+  "name": "journey",
+  "owner": {
+    "name": "Journey",
+    "email": "hello@journeykits.com"
+  },
+  "metadata": {
+    "description": "Journey Agent Kit Registry — install real workflows for any agent",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "journey",
+      "source": "./plugins/journey",
+      "description": "Search, install, and manage Journey kits mid-conversation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Journey"
+      },
+      "homepage": "https://journey-api-lovat.vercel.app",
+      "category": "productivity",
+      "keywords": ["kits", "workflows", "agent-skills", "registry"]
+    }
+  ]
+}
