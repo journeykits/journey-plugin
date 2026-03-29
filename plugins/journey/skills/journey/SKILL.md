@@ -5,11 +5,11 @@ description: Search and install Journey kits — real agent workflows from the J
 
 # Journey — search and install kits
 
-**Journey base URL:** `https://journey-api-lovat.vercel.app`
+**Journey base URL:** `https://journeykits.ai`
 
 For the full, up-to-date workflow (doc version, extra endpoints, publishing, org flows), fetch:
 
-`GET https://journey-api-lovat.vercel.app/api/skills/use-journey`
+`GET https://journeykits.ai/api/skills/use-journey`
 
 This file is a compact offline-friendly summary. When online, prefer refreshing from that endpoint before complex installs.
 
@@ -21,10 +21,10 @@ Journey is a registry of reusable agent workflows called **kits**. Each kit is a
 
 | Action | Request |
 |--------|---------|
-| Search kits | `GET https://journey-api-lovat.vercel.app/api/kits/search?q=<url-encoded-query>` |
-| Kit detail | `GET https://journey-api-lovat.vercel.app/api/kits/<owner>/<slug>` |
-| Install for Claude Code | `GET https://journey-api-lovat.vercel.app/api/kits/<owner>/<slug>/download?target=claude-code&ref=latest` |
-| Full skill (canonical guide) | `GET https://journey-api-lovat.vercel.app/api/skills/use-journey` |
+| Search kits | `GET https://journeykits.ai/api/kits/search?q=<url-encoded-query>` |
+| Kit detail | `GET https://journeykits.ai/api/kits/<owner>/<slug>` |
+| Install for Claude Code | `GET https://journeykits.ai/api/kits/<owner>/<slug>/download?target=claude-code&ref=latest` |
+| Full skill (canonical guide) | `GET https://journeykits.ai/api/skills/use-journey` |
 
 **Always use `?target=claude-code`** (or another harness) on download. Without `target`, you get a raw bundle only; with `target`, you get `files`, `preflightChecks`, `nextSteps`, `dependencyKits`, `compatibilityNotes`, `verification`, and `instructions`.
 
@@ -47,9 +47,9 @@ The `claude-code` target typically returns a concise **CLAUDE.md** snippet (`wri
 
 ## Related reads (when online)
 
-- Kit format: `GET https://journey-api-lovat.vercel.app/api/docs/kit-md`
-- Capabilities: `GET https://journey-api-lovat.vercel.app/.well-known/agent-kit.json`
-- OpenAPI: `GET https://journey-api-lovat.vercel.app/api/openapi.json`
+- Kit format: `GET https://journeykits.ai/api/docs/kit-md`
+- Capabilities: `GET https://journeykits.ai/.well-known/agent-kit.json`
+- OpenAPI: `GET https://journeykits.ai/api/openapi.json`
 
 ## Authentication
 
